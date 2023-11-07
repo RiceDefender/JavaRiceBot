@@ -23,7 +23,10 @@ public class Main {
         JDA jda = builder.build();
 
         jda.updateCommands().addCommands(
-                Commands.slash("ping", "ping command")
+                Commands.slash("ping", "ping command"),
+                Commands.slash("rice", "rice command"),
+                Commands.slash("dadjoke", "dad joke (the jokes are really bad...)"),
+                Commands.slash("badjoke", "bad joke (the jokes are really bad...)")
         ).queue();
     }
 }
